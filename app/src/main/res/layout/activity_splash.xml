@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/DarkSeaGreen"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/news"
+        android:id="@+id/splash_image"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_image"
+        android:id="@+id/splash_title"
+        android:text="News Feed"
+        android:textSize="32sp"
+        android:textColor="@color/AntiqueWhite"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        />
+
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/splash_title"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/AntiqueWhite"
+        />
+
+</RelativeLayout>

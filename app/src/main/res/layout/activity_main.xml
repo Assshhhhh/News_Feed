@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/AliceBlue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Feed"
+        android:textSize="32sp"
+        android:textColor="@color/AntiqueWhite"
+        android:background="@color/DarkSeaGreen"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:fontFamily="serif-monospace"
+        />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:trackColor="@color/DarkSeaGreen"
+        app:indicatorColor="@color/AntiqueWhite"
+        android:id="@+id/progress_linear"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/horizontal_buttons"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:id="@+id/search_view"
+                app:queryHint="Search news"
+                android:layout_margin="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/search_view_background"
+                />
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="General"
+                android:id="@+id/button_general"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Business"
+                android:id="@+id/button_business"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Sports"
+                android:id="@+id/button_sports"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Science"
+                android:id="@+id/button_science"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Technology"
+                android:id="@+id/button_tech"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Health"
+                android:id="@+id/button_health"
+                android:layout_margin="3dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#ECEEF3"
+                android:textColor="#535050"
+                android:text="Entertainment"
+                android:id="@+id/button_enter"
+                android:layout_margin="3dp"
+                />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_news"
+        />
+
+</LinearLayout>
